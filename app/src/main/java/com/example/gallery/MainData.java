@@ -6,10 +6,6 @@ public class MainData {
     Uri path;
     String title, date;
 
-    public MainData() {
-
-    }
-
     public MainData(Uri path, String title, String date) {
         this.path = path;
         this.title = title;
@@ -38,6 +34,12 @@ public class MainData {
 
     public void setDate(String date) {
         this.date = date;
+    }
+
+    // json 형식 리턴 데이터 반환 메소드 지정
+    // json 형식 리턴 데이터 반환 메소드 지정
+    public String getjsonFormat() {
+        return "{" + "\"path\":" + path + "," + "\"title\":" + title + "," + "\"date\":" + date + "}";
     }
 }
 
